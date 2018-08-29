@@ -1,13 +1,20 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="navbar">
-    <a href="#about">about</a>
-    <a href="#researchoutput">research output</a>
-    <a href="#contact">contact</a>
+  <div id='navbar' class='#navbar'>
+    <div class='home'><a href='#'><img src='logo.png'></a></div>
+    <div class='links'>
+      <a href='#about'>about</a>
+      <a href='#researchoutput'>research output</a>
+      <a href='#contact'>contact</a>
+    </div>
+    <div class='icon'><a href='javascript:void(0);' onclick='showLinks()'>
+      <i class='fa fa-bars'></i></a></div>
   </div>
   <div id='welcome'>
     <img src='mugshot.jpg'>
@@ -60,3 +67,18 @@
 <body>
 
 <html>
+
+<script>
+  function showLinks() {
+    var nav = document.getElementById('navbar');
+    console.log(nav.className);
+    if (nav.className === '#navbar') {
+      console.log('here');
+      nav.className += ' responsive';
+    }
+    else {
+      nav.className = '#navbar';
+    }
+    console.log(nav);
+  }
+</script>
