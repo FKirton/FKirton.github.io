@@ -98,7 +98,7 @@ body a:hover {
 }
 
 .about-text {
-  width: 65%;
+  width: 75%;
   text-align: justify;
   font-size: 1rem;
 }
@@ -121,7 +121,7 @@ body a:hover {
 }
 
 .researchoutput-text {
-  width: 65%;
+  width: 75%;
   text-align: justify;
   font-size: 1rem;
 }
@@ -155,7 +155,6 @@ body a:hover {
   }
   #navbar .links a {display: none;}
   #navbar .icon {
-    /* float: right; */
     display: flex;
   }
   #navbar.responsive .links {
