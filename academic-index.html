@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id='navbar' class='#navbar'>
+    <div class='home'><a href='#'><img src='home.png'></a></div>
+    <div class='links'>
+      <a href='#about'>about</a>
+      <a href='#researchoutput'>research output</a>
+      <a href='#contact'>contact</a>
+    </div>
+    <div class='icon'><a href='javascript:void(0);' onclick='showLinks()'>
+      <i class='fa fa-bars'></i></a></div>
+  </div>
+  <div id='welcome'>
+    <img src='mugshot.jpg'>
+    <div class='welcome-text'>Fiona Kirton</div>
+  </div>
+  </div>
+
+  <div id='about'>
+    <div class='about-links'>
+    <a href='https://osf.io/pp9n2/' target='_blank'><img src='osf.png'></a>
+    <a href='https://twitter.com/fionamkirton' target='_blank'><img src='twitter.png'></a>
+    <a href='https://github.com/FKirton' target='_blank'><img src='github.png'></a>
+  </div>
+    <div>About me</div>
+    <div class='about-text'>
+      <p>I am a PhD student in the <a href='http://www.lel.ed.ac.uk/cle/' target='_blank'>Centre for Language Evolution</a> at the University of Edinburgh,
+      supervised by <a href='http://www.lel.ed.ac.uk/~simon/' target='_blank'>Simon Kirby</a>,
+      <a href='http://www.lel.ed.ac.uk/~kenny/' target='_blank'>Kenny Smith</a>,
+      <a href='http://jennifer-culbertson.github.io/' target='_blank'>Jenny Culbertson</a> and
+      <a href='https://www.ed.ac.uk/profile/marieke-schouwstra' target='_blank'>Marieke Schouwstra</a>.</p>
+      <p>In my research, I investigate the cognitive biases that influence word order
+        in improvised or newly developing communication systems. I am particularly interested in how features such as
+        the animacy of the interacting entities affects the way people structure
+        their descriptions of events.</p>
+      <p>I am funded by the <a href='https://www.carnegie-trust.org/carnegiephdscholars2016/fiona-kirton' target='_blank'>Carnegie Trust for the Universities of Scotland</a>.</p>
+      <p>Research interests: language evolution, word order, animacy & syntax, event conceptualisation,
+        communication, emerging sign languages</p>
+    </div>
+  </div>
+  <div id='researchoutput'>
+    <div>Research output</div>
+    <div class='researchoutput-text'>
+      <p>Kirton, F., Schouwstra, M., Culbertson, J., Smith, K., & Kirby, S. (2018).
+        Constituent Order in Improvised Gesture Reflects Speaker Perspective.
+        In C. Cuskley, M. Flaherty, L. McCrohon, H. Little, A. Ravignani, & T. Verhoef (Eds.),
+        <i>The Evolution of Language: Proceedings of the 12th International Conference</i> (pp. 215&ndash;217).
+        doi:<a href='https://wydawnictwo.umk.pl/upload/files/OPEN%20ACCESS/The%20Evolution%20of%20Language/052.pdf' target='_blank'>10.12775/3991-1.052</a></p>
+    </div>
+  </div>
+
+
+
+  <div id='contact'>
+      <div>Contact</div>
+      <div class='contact-text'><code>fiona [dot] kirton [at] gmail [dot] com</code></div>
+  </div>
+
+  <div id='bottom-bar'>
+    <div>&copy; Fiona Kirton 2018</div>
+  </div>
+<body>
+
+<html>
+
+<script>
+  function showLinks() {
+    var nav = document.getElementById('navbar');
+    console.log(nav.className);
+    if (nav.className === '#navbar') {
+      console.log('here');
+      nav.className += ' responsive';
+    }
+    else {
+      nav.className = '#navbar';
+    }
+    console.log(nav);
+  }
+</script>
