@@ -12,7 +12,7 @@ body {
 }
 
 p {
-    text-align: justify;
+    text-align: left;
     padding-top: 4px;
     padding-left: 6px;
     padding-right: 6px;
@@ -144,7 +144,7 @@ img.external-icon {
 
 #profile {
     text-align: center;
-    margin: 3px 20px;
+    margin: 3px 10px;
 }
 
 #profile h2 {
@@ -456,14 +456,14 @@ div.slider-novice, div.slider-intermediate, div.slider-expert {
 }
 
 @media (min-width: 0px) {
-    p { font-size: 1.1rem; }
-    .collapsible-tab { font-size: 1.2rem; }
+    p { font-size: 1.5rem; }
+    .collapsible-tab { font-size: 1.5rem; }
     .research-output-text { font-size: 1rem; }
 }
 
 @media (min-width: 400px) {
-    p { font-size: calc(1.1rem + 1vw); }
-    .collapsible-tab { font-size: calc(1.2rem + 1vw); }
+    p { font-size: calc(1.5rem + 1vw); }
+    .collapsible-tab { font-size: calc(1.5rem + 1vw); }
     .research-output-text { font-size: calc(1rem + 1vw); }
 }
 
