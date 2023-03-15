@@ -456,15 +456,15 @@ div.slider-novice, div.slider-intermediate, div.slider-expert {
 }
 
 @media (min-width: 0px) {
-    p { font-size: 0.75rem; }
-    .collapsible-tab { font-size: 0.75rem; }
-    .research-output-text { font-size: 0.6rem; }
+    p { font-size: 1.1rem; }
+    .collapsible-tab { font-size: 1.2rem; }
+    .research-output-text { font-size: 1rem; }
 }
 
 @media (min-width: 400px) {
-    p { font-size: calc(0.75rem + 1vw); }
-    .collapsible-tab { font-size: calc(0.75rem + 1vw); }
-    .research-output-text { font-size: calc(0.6rem + 1vw); }
+    p { font-size: calc(1.1rem + 1vw); }
+    .collapsible-tab { font-size: calc(1.2rem + 1vw); }
+    .research-output-text { font-size: calc(1rem + 1vw); }
 }
 
 @media (max-width: 800px) {
