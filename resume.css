@@ -317,13 +317,6 @@ details > article {
     z-index: 999;
 }
 
-details p {
-    font-size: 0.95em;
-}
-
-details:focus-within {
-    z-index: var(--z-index) + 1;
-}
 
 p.date {
     margin-top: 0;
@@ -419,6 +412,7 @@ div.slider-novice, div.slider-intermediate, div.slider-expert {
 }
 
 .collapsible-tab {
+    font-width: bold;
     color: #211f33;
     background-color: #84acad;
     border-top-style: solid;
@@ -457,25 +451,32 @@ div.slider-novice, div.slider-intermediate, div.slider-expert {
 
 @media (min-width: 0px) {
     p { font-size: 1.5rem; }
+    details p { font-size: 1.1rem; }
     .collapsible-tab { font-size: 1.5rem; }
-    .research-output-text { font-size: 1rem; }
+    .research-output-text p { font-size: 1.05rem; }
+    img.mugshot { height: 60%; }
 }
 
 @media (min-width: 400px) {
     p { font-size: calc(1.5rem + 1vw); }
+    details p { font-size: calc(1.1rem + 1vw); }
     .collapsible-tab { font-size: calc(1.5rem + 1vw); }
-    .research-output-text { font-size: calc(1rem + 1vw); }
+    .research-output-text p { font-size: calc(1.05rem + 1vw); }
+    img.mugshot { height: 80%; }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+    p { font-size: 1.5rem; }
     .collapsible-content {display: none;}
-    .collapsible-tab {display: block;}
+    .collapsible-tab {display: block; font-size: 1.6rem;}
     .container {flex-direction: column; flex: 1;}
-    summary {font-size: 0.75rem; }
+    summary {font-size: 0.9rem; }
+    .research-output-text p { font-size: 1.2rem; }
 }
 
 @media (min-width: 1001px) {
     p { font-size: 1.2rem; }
-    .research-output-text { font-size: 1.2rem; }
+    details p { font-size: 1.2rem; }
+    .research-output-text p { font-size: 1.2rem; }
     summary {font-size: 1rem; }
 }
